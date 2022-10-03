@@ -1,0 +1,19 @@
+#gallery-p {
+    font-size: 22px;
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+.div-img {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery-img {
+    border-color: #282d32;
+    border-style: groove;
+    border-radius: 7%;
+    width: auto;
+    max-width: 500px;
+}

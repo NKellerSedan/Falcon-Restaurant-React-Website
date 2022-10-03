@@ -1,0 +1,27 @@
+.form-sub {
+    margin: auto;
+    width: 80%;
+    height: 70%;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.form-sub label {
+    color: black;
+}
+
+.form-sub button {
+    background-color: rgb(77, 73, 73);
+    border-radius: 6px;
+    width: 200px;
+    height: 40px;
+}
+
+.form-sub input {
+    width: 90%;
+    margin: 0 auto;
+    height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}

@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash&family=Kdam+Thmor+Pro&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* ELEMENT STYLES -------------------- */
+
+body {
+  background: #e8e7e7;
+  font-family: arial;
+}
+
+header {
+  color: #fff;
+  padding: 5px 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: #7eb8f1;
+  border-bottom: solid 2px #d4caff;
+  width: 80%;
+  margin: 30px auto;
+}
+
+header h1 {
+  flex-grow: 1;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+button {
+  outline: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.footer-dark {
+  padding: 50px 0;
+  color: #f0f9ff;
+  background-color: #143455;
+}
+
+.footer-dark h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.footer-dark #dashboard {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.footer-dark #dashboard a {
+  color: rgb(10, 172, 236);
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.footer-dark #dashboard a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+  .footer-dark .item:not(.social) {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom: 36px;
+}
+
+@media (max-width: 767px) {
+  .footer-dark .item.text {
+    margin-bottom: 0;
+  }
+}
+
+.footer-dark .item.text li {
+  opacity: 0.5;
+  margin-bottom: 0;
+}
+
+.footer-dark .item.social {
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .footer-dark .item.social {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.footer-dark .item.social>a {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.footer-dark .item.social>a:hover {
+  opacity: 0.9;
+}
+
+.footer-dark .copyright {
+  text-align: center;
+  opacity: 0.3;
+  font-size: 13px;
+  margin-bottom: 150px;
+}
+
+#home-intro{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+}
+
+#homeimg-div {
+  text-align: center;
+}
+
+#home-img {
+  border-color: #282d32;
+    border-style: groove;
+    border-radius: 7%;
+    width: auto;
+    max-width: 500px;
+}
+
+#addressInfo{
+  text-align: center;
+}
+
+#dashboard {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#dashboard a {
+  color: white !important;
+}
+
+
+.footer-dark #homeroutes {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.footer-dark #homeroutes a {
+  color: rgb(10, 172, 236);
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.footer-dark #homeroutes a:hover {
+  opacity: 0.8;
+}
+
+/********/
+/** HOME PAGE **/
+/********/
+.homeContent {
+  display: table;
+  padding-left: 5%;
+}
+
+.homeContent2 {
+  width: 45%;
+  font-family: sans-serif;
+  display: table-cell;
+  line-height: 1.6em;
+  padding-left: 25px;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.homeContent3 {
+  width: 55%;
+  display: table-cell;
+  padding-left: 50px;
+}
+
+.homeImg {
+  text-align: center;
+}
+
+#homeLogo {
+  max-width: 500px;
+}
+
+#homeVideo {
+  margin:10%;
+  margin-top: 150px;
+  max-width: 600px;
+  width: auto;
+}
+
+@media only screen and (max-width: 60em) {
+  .homeContent2, .homeContent3 {
+      display: table-row;
+  }
+
+  #homeLogo {
+      max-width: 85%;
+  }
+
+  #homeVideo {
+      max-width: 85%;
+  }
+}
+
+#homesections {
+  float: left;
+}
+
+#homesections a:hover:not(.active) {
+  background-color: #111;
+}
+
+
+#homesections a {
+  display: block;
+  color: rgb(222, 5, 5);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+#sections {
+  float: left;
+}
+
+#sections a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#sections a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #3a3a3a;
+}
+
+#email {
+  font-size: 18px;
+}
+
+
+.navbar-hk {
+	margin: 27px auto 0;
+  padding-left: 10px;
+	position: relative;
+	background-color: #274e76;
+	font-size: 0;
+  margin-bottom: 25px;
+}
+
+.navbarsection a:hover:not(.active) {
+  background-color: rgb(35, 35, 35);
+}
+
+.navbar-hk .navbarsection {
+  line-height: 50px;
+  height: 100%;
+  font-size: 16px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-family: Kdam Thmor Pro;
+}
+
+.navbar-hk .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all .5s ease 0s;
+  border-radius: 8px;
+}
+
+
+#navsec a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 20px 0 20px;
+}
+
+#navsec a::after {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+#navsec a::after {
+  transition: all 0.2s linear;
+}
+
+#navsec a:hover {
+  color: rgb(255, 0, 0);
+}
+
+#navsec a:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+#topics-hk {
+  text-align: center;
+  margin: 40px 0 40px;
+  text-align: center;
+  font-size: 30px;
+  color: #e77510;
+  text-shadow: 1px 1px 2px #000000;
+  font-family: 'Cherry Swash', cursive;
+  text-decoration: underline;
+}
+
+#add-r-title{
+  text-decoration: underline;
+}
+/* COMPONENT STYLES -------------------- */
+
+.filter-search {
+  text-align: center;
+  width: 80%;
+  margin: 30px auto;
+}
+
+.add-form {
+  text-align: center;
+  width: 80%;
+  margin: 30px auto;
+}
+
+
+.page-style-hk {
+  min-height: calc(100vh - 250px);
+  width: 80%;
+  margin: 30px auto;
+}
+
+#pic {
+  height: 210px;
+  width: 210px;
+  border-radius: 15px;
+  margin: 0.2%;
+  padding: 1%;
+}
+
+table {
+  background-color: #ff990027;
+  table-layout: fixed;
+  width: 100%;
+}
+
+td {
+  width: 25%;
+}
+
+textarea {
+  width: 95%;
+  height: 50px;
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+  padding-right: 10%;
+}
+
+button {
+  background-color: #282c34;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.menu-nav {
+  text-transform: uppercase;
+}
+
+#menu-searchbar {
+  text-align: center;
+}
+
+#menu-searchbar input {
+  padding: 0.5% 25% 0.5% 1%;
+}
+
+.menu-btn {
+  background-color: #215285;
+  padding: 5px;
+  border: 2px solid black;
+  color: white;
+  text-decoration: none;
+  font-family: Kdam Thmor Pro;
+}
+
+.menu-btn:hover {
+  background-color: #0b2c4e;
+}
+
+.counter-action {
+  padding: 8px;
+}
+
+.food-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.persons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.person {
+  border-radius: 15px;
+  margin: 0.2%;
+  padding: 1%;
+  background-color: rgb(82, 134, 254);
+}
+
+#name {
+  color: #f0f9ff;
+}
+
+#description {
+  color: #f0f9ff;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+.img-curve {
+  border-radius: 15px;
+}
+
+.food-box {
+  width: 45%;
+  margin: 0.2%;
+  padding: 1%;
+  float: left;
+  background-color: #efefef;
+  border-radius: 15px;
+}
+
+.food-img {
+  width: 20%;
+  float: left;
+}
+
+.food-details {
+  width: 70%;
+  float: left;
+  margin-left: 5%;
+}
+
+
+.food-price {
+  font-size: 1.2rem;
+  margin: 2% 0;
+}
+
+.food-desc {
+  font-size: 0.8rem;
+  color: #3f454e;
+  line-height: 1.2;
+}
+
+@media only screen and (max-width: 80em) {
+  .food-img {
+      float: none;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .logo {
+    float: unset !important;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .food-box {
+      width: 90%;
+      padding: 2%;
+      margin-bottom: 0.5%;
+  }
+
+}
+
+.loginBox {
+    background-color: white;
+    padding: 20px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px groove;
+    box-shadow: 1px 1px 2px #000;
+}
+
+.loginBox input {
+  padding: 5px;
+  margin: 5px;
+  width: 85%;
+}
+
+.footer-nav {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.group-box {
+  text-align: center;
+}
+
+.group-box ul {
+  list-style: none;
+  display: inline-flex;
+  margin: 0;
+}
+
+.group-box li {
+  padding: 10px;
+}
+
+.order-table th {
+  background-color: #367bc1;
+  color: white;
+}
+
+.order-table td, .order-table th {
+  text-align: center;
+  border: 2px inset #3a3a3a;
+}
+
+.logo {
+  float: left;
+}
+
+/********/
+/** CART      **/
+/********/
+.cart-wrapper
+{
+  width: 500px;
+  padding: 20px;
+  font-family: Kdam Thmor Pro;
+}
+
+@media only screen and (max-width: 80em) {
+  .cart-wrapper
+  {
+    width: auto !important;
+  }
+}
+
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightblue;
+  padding-bottom: 20px;
+}
+
+.cart-inner {
+  flex: 1;
+}
+
+.cart-information {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cart-information,
+.cart-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-img {
+  object-fit: contain;
+  margin-left: 40px;
+}
+
+.cart-btn {
+  position: fixed;
+  z-index: 100;
+  right: 20px;
+  bottom: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

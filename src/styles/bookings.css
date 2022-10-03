@@ -1,0 +1,81 @@
+#form-info {
+    background-color: rgb(133, 132, 132);
+    border-radius: 10px;
+    height: 100%;
+
+}
+
+#form-info legend {
+    text-align: center;
+}
+
+.select-input {
+    background-color: rgb(133, 132, 132);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.thanks {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+
+}
+
+.thanks-img{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+.thanks-img img{
+    width: 600px;
+    height: 400px;
+
+}
+
+.row-info {
+    display: flex;
+}
+
+.col-info {
+    width: 50%;
+    padding: 20px;
+
+}
+
+legend {
+    font-size: xx-large;
+}
+
+.form-group label {
+    font-size: large !important;
+
+}
+
+.form-group {
+    text-align: center !important;
+}
+
+.form-group input {
+    width: 100% !important;
+    height: 50px !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: medium !important;
+    margin-bottom: 40px !important;
+
+}
+
+.btn-info {
+    width: 120px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    background-color: rgb(47, 44, 44)!important;
+    color: #fff !important;
+}
+
+.btn-info:hover {
+    background-color: rgb(120, 117, 117);
+}
